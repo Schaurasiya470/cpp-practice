@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+
+	char ch = 'A' - 1;
+	int counter = 0;
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			ch = ch + 1;
+			cout << ch << " ";
+			// counter++;
+		}
+		cout << endl;
+	}
+}

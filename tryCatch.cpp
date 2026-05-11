@@ -1,17 +1,20 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main(){
-string str;
-cin>>str;
+int main()
+{
+    string str;
+    cin >> str;
 
-try{
+    try
+    {
 
-int n= stoi(str);
-cout<<n;
-}
-catch(...){
-cout<<"Error";
-}
+        int n = stoi(str);
+        cout << n;
+    }
+    catch (...)
+    {
+        cout << "Error";
+    }
 }

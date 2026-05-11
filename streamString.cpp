@@ -1,13 +1,14 @@
-#include<iostream>
-#include<vector>
-#include<sstream>
-#include<algorithm>
+#include <iostream>
+#include <vector>
+#include <sstream>
+#include <algorithm>
 
 using namespace std;
 
-int main(){
+int main()
+{
 
-	cout<< "Enter sentance : ";
+	cout << "Enter sentance : ";
 
 	string sentance;
 	getline(cin, sentance);
@@ -17,15 +18,17 @@ int main(){
 	int wordCount = 0;
 	vector<string> txtWords;
 
-	while (ss >> word){
+	while (ss >> word)
+	{
 		wordCount++;
 		txtWords.push_back(word);
 	}
 
-	reverse(txtWords.begin(),txtWords.end());
+	reverse(txtWords.begin(), txtWords.end());
 	cout << "Total Word Count : " << wordCount << endl;
-	for(string word : txtWords){
-		cout << word<< endl;
+	for (string word : txtWords)
+	{
+		cout << word << endl;
 	}
 
 	return 0;
